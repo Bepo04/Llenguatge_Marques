@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--Obrim el document amb un <html> que englobarà tot el document sencer menys la línia 1. La primera línia és la que s'encarrega d'avisar al navegador que aquest document està escrit amb el llenguatge html. En aquest llenguatge, els elements tenen una etiqueta de començament i una de tancament, entre les quals va el contingut. En la majoria de casos segueix aquest esquema: <x>exemple</x>-->
+<html>
+    <!--<head> ens serveix per a afegir metadades a la pàgina. Son dades que no seran visibles a la pàgina web i ens serviran per diverses funcions, com ara amb l'element <title>, que marquem el nom de la pàgina mostrat a la finestra del navegador-->
+    <head>
+        <title>Butlletí ITIC</title>
+    </head>
+    <!--un cop hem acabat amb el <head> podem obrir el <body>, aquí és on afegirem tot el contingut que volem que es mostri a la nostra pàgina web. A partir d'aquí afegirem tots els elements que volem fer visibles a la pàgina, en aquest cas comencem per un títol i subtítol (respectivament <h1> i <h2>), seguits d'uns paràgrafs (<p>) amb el contingut de la notícia. Entre mig dels paràgrafs afegim una imatge des d'un URL amb <img src="link">-->
+    <body>
+        <h1>Així assaboreixen els animals el moment històric del Girona</h1>
+        <h2>Més de sis-centes mascotes ja són sòcies de l'entitat catalana en una iniciativa pionera</h2>
+        <p>Es diu Pelu, és una gata de tretze anys i és sòcia del Girona. Sí, ho han llegit bé, ara els animals de companyia poden ser socis del club blanc-i-vermell, en una iniciativa pionera que ha tingut una molt bona acollida: en pocs dies, hi ha hagut més de sis-centes sol·licituds. El Girona, el primer club de futbol pet friendly del món, està implicat en la visibilització i el compromís per difondre els valors de protecció i respecte als animals, que ara també podran assaborir a dreta llei el moment dolç de l'equip de Míchel, colíder de la Lliga i que aquest dimecres visita Vila-real (19 h, DAZN). La sòcia animal número 1 del Girona, com no podia ser de cap altra manera, és la Canya, la gossa oficial.</p>
+        <img src="https://newsletter.laliga.es/upload/media/multimedia/0001/49/thumb_48379_multimedia_small.jpeg?t=1666774517">
+        <p>"És una bona idea, i no per fer sòcia la mascota, sinó per fidelitzar el soci i apropar-lo més a la institució. Tot el que es faci perquè el soci estigui content amb el Girona és benvingut", explica José Fogliano, el responsable de la Pelu, i, esclar, soci del club gironí. "La iniciativa és més romàntica que una altra cosa, però m'agrada, i per això no vaig dubtar a implicar-m'hi. Per a mi, la Pelu no és una mascota, és una més de la família. Bé, una més no: és la reina. Perquè fa el que vol i quan vol. Em dona molt d'amor i em fa il·lusió que també sigui del Girona", afegeix.</p>
+        <p>Cada soci té dret a inscriure un animal de companyia de manera gratuïta i amb validesa permanent. Els no socis hauran de pagar deu euros per temporada. Entre altres avantatges, el Carnet de Soci Animal inclou un carnet personalitzat amb la imatge de la mascota, descomptes en productes oficials relacionats amb les mascotes, com collars, menjadores o roba, la participació en l'esdeveniment anual de peluts a Montilivi i la possibilitat de participar en el programa Animal Respect de Gosbi, el patrocinador principal del club, el nom del qual llueix al frontal de la samarreta.</p>
+        <!--Tot seguit fem una llista numerada amb l'element <ol> (ordered list) per a l'apartat de fonts. El qual obrim amb un subtítol per obrir un nou apartat i delimitar-lo. Amb <li> obrim cada punt de la llista, i amb <a href="link">text_visible</a> associem links a altres pàgines al text de la nostra-->
+        <h2>Fonts de l'article</h2>
+        <ol>
+            <li><a href="https://www.ara.cat/esports/girona-fc/aixi-assaboreixen-animals-moment-historic-girona_130_4811134.html">Notícia de referència: l'Ara</a></li>
+            <li><a href="https://www.diaridegirona.cat/girona-fc/2023/09/21/girona-crea-carnet-soci-animal-92380417.html">Notícia de referència: Diari de Girona</a></li>
+            <li><a href="https://www.gironafc.cat/socianimal">Pàgina del club</a></li>
+        </ol>
+        <!--En aquest cas utilitzem l'element <ul> per indicar que volem una llista no numerada (unordered list), i igual que abans, utilitzem un subtítol i escrivim cada línia de la llista-->
+        <h2>Altres notícies que et poden interessar:</h2>
+        <ul>
+            <li><a href="https://www.diaridegirona.cat/girona/2023/09/27/condemnen-lajuntament-girona-pagar-mes-92562612.html">Condemnen l'ajuntament de Girona a pagar més de 97.000 euros a cinc agents de la Policia Municipal que no van cobrar una part del sou quan eren a l'Escola de Policia</a></li>
+            <li><a href="https://www.diaridegirona.cat/selva/2023/09/27/l-alcalde-lloret-formalitza-rebaixa-92610888.html">L’alcalde de Lloret formalitza la rebaixa del seu sou que estalviarà 80.000€ anuals</a></li>
+            <li><a href="https://www.diaridegirona.cat/selva/2023/09/27/busquen-home-atracat-banc-blanes-92605557.html">Busquen un home que ha atracat un banc a Blanes i ha fugit amb el botí</a></li>
+        </ul>
+        <!--Un cop tenim tot el cos de la notícia, tanquem el <body>, si no volem afegir-hi res més, per finalitzar el document haurem de tancar el <html> que haviem obert a l'inici (línia 2)-->
+    </body>
+</html>

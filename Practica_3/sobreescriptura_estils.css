@@ -1,0 +1,42 @@
+/*1. color general de la lletra negra*/
+#container {
+    color:black;
+
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+#titol-pagina {
+    color:gray;
+    background:white;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+.paragraf1 strong, .paragraf2 strong {
+    text-decoration:underline;
+    color:green;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+p.paragraf2 a {
+    font-style:italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+div > footer {
+    font-size:10px;
+    text-align:center;
+}
+/* Teniem el dubte de si per footer general enteniem tots els footers o el final, que no queda tant indexat. Hem respost l'exercici entenent la segona opció, però en tot cas, podriem estilitzar tots els footers treient el "div >" i deixant només "footer" */
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?
+
+En cas que invertim l'ordre de càrrega dels fitxers, en el nostre cas només canvia la <strong> del paràgraf 2. Això és degut a que en aquest fitxer s'han utilitzat elements amb més prioritat que en l'altre.
+En el nostre cas concret, per a donar estil propi a les <strong> hem utilitzat les classes .paragraf1 i .paragraf2, mentre que en el fitxer estils_inicials.css, es dona el cas que per a estilitzar les <strong> del paragraf 2, s'utilitza
+la mateixa classe que en el nostre arxiu. Donat que en cas de "empat" es prioritza l'últim escrit, les especificacions per a la classe .paragraf2 son les del fitxer estils_inicials.css.
+
+Per tal de corregir-ho i donar prioritat a tot el nostre document per sobre de l'altre (mantenint invertit l'ordre de càrrega), podriem escriure el següent en el punt 3 d'aquest arxiu:
+    .paragraf1 > strong, p.paragraf2 strong {
+        text-decoration:underline;
+        color:green;
+    }
+D'aquesta forma li donem més prioritat al paràgraf de la classe en la que voliem intervenir, on es troben dins les <strong> */

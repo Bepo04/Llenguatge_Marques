@@ -1,0 +1,23 @@
+/* En un fitxer CSS utilitzem l'estructura que veiem en cada bloc. Obrim amb l'element de HTML que volem estilitzar, i englobat amb {} afegim cada modificació que li volem fer. Per exemple, en el primer bloc li donem color, centrem i posem en negreta el títol de la pàgina */
+h1 {
+    color:red;
+    text-align:center;
+    font-weight:bold;
+}
+/* li donem estils propis al títol de la taula */
+caption {
+    text-align:center;
+    color:blue;
+}
+/* Aquí editem únicament els títols de la taula (th) */
+th {
+    text-align:center;
+    background-color: aquamarine;
+}
+/* amb els següents dos elements, li posem linies a les vores de la taula. Si els volem donar els mateixos atributs a varis elements, podem afegir-los junts separats per comes */
+table, th, td {
+    border:1px solid black;
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+}
