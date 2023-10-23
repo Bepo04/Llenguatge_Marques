@@ -1,3 +1,4 @@
+<!--Aquest document pretén simular un formulari en HTML, amb un fitxer CSS extern. En aquest, simulem que estem fent un estudi i necessitem recollir dades-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,39 @@
     <h1>A quin animal ens assemblem més?</h1>
     <h2>Aquest formulari preten recollir dades d'hàbits i gustos per tal de fer un estudi: a quin animal ens assemblem més?</h2>
     <form>
-        
+        <div>
+            <h3>Quines d'aquestes activitats t'agraden? Pots escollir tantes opcions com vulguis</h3>
+            <input type="checkbox" id="checkJugar" name="Jugar" checked>
+            <label for="checkJugar">Jugar</label><br>
+            <input type="checkbox" id="checkDormir" name="Dormir">
+            <label for="checkDormir">Dormir</label><br>
+            <input type="checkbox" id="checkMenjar" name="Menjar">
+            <label for="checkMenjar">Menjar</label><br>
+            <input type="checkbox" id="checkCantar" name="Cantar">
+            <label for="checkCantar">Cantar</label>
+        </div>
+        <div>
+            <h3>Del 1 al 5, sent 1 el mínim i 5 el màxim, com de sociable et consideres?</h3>
+            <input type="radio" id="radio1" name="opcio" required>
+            <label for="radio1">1</label><br>
+            <input type="radio" id="radio2" name="opcio" required>
+            <label for="radio2">2</label><br>
+            <input type="radio" id="radio3" name="opcio" required checked>
+            <label for="radio3">3</label><br>
+            <input type="radio" id="radio4" name="opcio" required>
+            <label for="radio4">4</label><br>
+            <input type="radio" id="radio5" name="opcio" required>
+            <label for="radio5">5</label><br>
+        </div>
+        <div>
+            <label for="textPropostes">
+                <h3>Indica aquí qualsevol observació i/o proposta per a seguir millorant el nostre estudi. Si no vols afegir res, fes-ho saber (el camp és obligatori)</h3>
+            </label>
+            <textarea id="textPropostes" rows="10" cols="75" name="Propostes" placeholder="Escriviu aquí suggeriments i propostes" required></textarea><br>
+        </div>
+        <div>
+            <input type="button" value="Enviar">
+        </div>
     </form>
 </body>
 </html>
