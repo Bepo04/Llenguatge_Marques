@@ -1,3 +1,39 @@
+/* Aquest és el fitxer .css per estilitzar el formulari, utilitzem els elements, id's i classes que hem utilitzat al formulari per a estilitzar-lo */
+body{
+    background-color: darkcyan;
+    font-family:cursive;
+}
+
+form {
+    background-color:aquamarine;
+    padding: 30px;
+    border-radius:10px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.textCurt {
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: rpx;
+    font-size: 14px;
+}
+
+#numberSon {
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: rpx;
+    font-size: 14px;
+}
+
+#horesson {
+    width: 100px;
+}
 .boto {
     background-color: aqua;
     border-radius:15px;
