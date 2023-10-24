@@ -4,14 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que animal serias?</title>
+    <title>Quin animal series?</title>
 </head>
 <body>
     <h1>A quin animal ens assemblem més?</h1>
     <h2>Aquest formulari preten recollir dades d'hàbits i gustos per tal de fer un estudi: a quin animal ens assemblem més?</h2>
     <form>
+        <p>1. Informació personal</p>
         <div>
-            <h3>Quines d'aquestes activitats t'agraden? Pots escollir tantes opcions com vulguis</h3>
+            <label for="textNom">Nom i Cognoms:</label>
+            <input type="text" id="textNom" name="nomicognoms" placeholder="Escriu aqui" required>
+            <br><br>
+        </div>
+        <div>
+            <label for="email">Correu electronic:</label>
+            <input type="email" id="email" name="email" placeholder="holaquetal@gmail.com" required>
+            <br><br>
+        </div>
+        <div>
+            <label for="selectEdat">Franja d'edat:</label>
+            <select id="selectEdat" name="edat" required>
+                <option value="0-12">0 a 12 anys</option>
+                <option value="13-17">13 a 17 anys</option>
+                <option value="18-25">18 a 25 anys</option>
+                <option value="26+">26 o mes anys</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <p>2. Indica el número aproximat d'hores que dorms al dia de mitjana</p>
+            <label for="numberSon">Hores de son:</label>
+            <input type="number" id="numberSon" name="horesson" placeholder="08" required>
+            <br><br>
+        </div>
+        <div>
+            <p>3. Quines d'aquestes activitats t'agraden? Pots escollir tantes opcions com vulguis</p>
             <input type="checkbox" id="checkJugar" name="Jugar" checked>
             <label for="checkJugar">Jugar</label><br>
             <input type="checkbox" id="checkDormir" name="Dormir">
@@ -20,9 +47,10 @@
             <label for="checkMenjar">Menjar</label><br>
             <input type="checkbox" id="checkCantar" name="Cantar">
             <label for="checkCantar">Cantar</label>
+            <br><br>
         </div>
         <div>
-            <h3>Del 1 al 5, sent 1 el mínim i 5 el màxim, com de sociable et consideres?</h3>
+            <p>4. Del 1 al 5, sent 1 el mínim i 5 el màxim, com de sociable et consideres?</p>
             <input type="radio" id="radio1" name="opcio" required>
             <label for="radio1">1</label><br>
             <input type="radio" id="radio2" name="opcio" required>
@@ -33,15 +61,17 @@
             <label for="radio4">4</label><br>
             <input type="radio" id="radio5" name="opcio" required>
             <label for="radio5">5</label><br>
+            <br><br>
         </div>
         <div>
             <label for="textPropostes">
-                <h3>Indica aquí qualsevol observació i/o proposta per a seguir millorant el nostre estudi. Si no vols afegir res, fes-ho saber (el camp és obligatori)</h3>
+                <p>5. Indica aquí qualsevol observació i/o proposta per a seguir millorant el nostre estudi. Si no vols afegir res, fes-ho saber (el camp és obligatori)</p>
             </label>
             <textarea id="textPropostes" rows="10" cols="75" name="Propostes" placeholder="Escriviu aquí suggeriments i propostes" required></textarea><br>
+            <br><br>
         </div>
         <div>
-            <input type="button" value="Enviar">
+            <input type="button" id="botoEnviar" value="Enviar">
         </div>
     </form>
 </body>
