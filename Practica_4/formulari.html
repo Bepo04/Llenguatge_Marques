@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quin animal series?</title>
+    <link rel="stylesheet" href="fitxer.css">
 </head>
 <body>
     <h1>A quin animal ens assemblem més?</h1>
     <h2>Aquest formulari preten recollir dades d'hàbits i gustos per tal de fer un estudi: a quin animal ens assemblem més?</h2>
-    <form>
+    <form action="formulari_enviat.html">
         <p>1. Informació personal</p>
         <div>
             <label for="textNom">Nom i Cognoms:</label>
-            <input type="text" id="textNom" name="nomicognoms" placeholder="Escriu aqui" required>
+            <input type="text" id="textNom" name="nomicognoms" class="textCurt" placeholder="Escriu aqui" required>
             <br><br>
         </div>
         <div>
             <label for="email">Correu electronic:</label>
-            <input type="email" id="email" name="email" placeholder="holaquetal@gmail.com" required>
+            <input type="email" id="email" name="email" placeholder="holaquetal@gmail.com" class="textCurt" required>
             <br><br>
         </div>
         <div>
@@ -71,7 +72,7 @@
             <br><br>
         </div>
         <div>
-            <input type="button" id="botoEnviar" value="Enviar">
+            <input type="submit" id="enviar" class="boto" value="Enviar">
         </div>
     </form>
 </body>
