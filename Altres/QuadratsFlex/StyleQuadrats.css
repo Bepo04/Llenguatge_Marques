@@ -1,0 +1,28 @@
+.box {
+    background-color: aquamarine;
+    width: 20vh;
+    height: 20vh;
+    margin: 2vh;
+
+    color:blueviolet;
+    font-size: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: greenyellow;
+    color: red;
+    width: 44vh;
+    height: 44vh;
+    font-size: 20vh;
+    transition: 1s;
+}
+
+#container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
