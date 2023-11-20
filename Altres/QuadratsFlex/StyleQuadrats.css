@@ -18,7 +18,8 @@
     width: 44vh;
     height: 44vh;
     font-size: 20vh;
-    transition: 1s;
+    transition: 10s;
+    transform: rotate(20160deg);
 }
 
 #container {
