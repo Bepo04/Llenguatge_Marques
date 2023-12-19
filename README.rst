@@ -11,3 +11,4 @@ Continguts (per ara)
 ----------
 * Iniciació a HTML
 * Iniciació a CSS
+* Iniciació a XML i DTD
